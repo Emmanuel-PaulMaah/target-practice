@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Target Practice</title>
+    <meta name="description" content="Tap floating targets in AR. WebXR + three.js." />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="ui">
+      <div id="hud">
+        <div class="row">
+          <span>score:</span><strong id="score">0</strong>
+        </div>
+        <div class="row">
+          <span>targets:</span><strong id="alive">0</strong>
+        </div>
+      </div>
+
+      <div id="controls">
+        <button id="reset">reset</button>
+        <button id="pause">pause</button>
+        <button id="spawn">spawn burst</button>
+      </div>
+
+      <div id="help">
+        tap targets to pop them. move around; they’re placed 1–3m away.
+      </div>
+    </div>
+
+    <!-- the AR button will be injected next to the canvas by XRButton -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
